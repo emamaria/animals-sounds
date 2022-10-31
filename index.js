@@ -1,5 +1,5 @@
 
-let animals = ["cat", "dog", "elephant", "horse", "lion", "monkey", "parrot", "sheep", "tiger", "wolf"]
+let animals = ["cat", "dog", "elephant", "horse", "lion", "monkey", "parrot", "sheep", "tiger", "wolf", "pig"]
 
 console.log(animals.length)
 

@@ -1,9 +1,16 @@
+h1, h2{
+    font-family: 'Montserrat Alternates', sans-serif
+}
 
+.music{
+    width: 60px;
+}
 
 h1{
     text-align: center;
     margin:  60px 0 0 0;
     font-size: 100px;
+
 }
 
 h2{
@@ -18,4 +25,5 @@ body{
 .mouseover{
     box-shadow: 0 3px 4px 0  lightblue;
     opacity: 0.5;
+    cursor: pointer;
   }
