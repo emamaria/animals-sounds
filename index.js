@@ -16,6 +16,7 @@ animals.forEach( elem => {
  animal.setAttribute("alt", `${elem}`)
  animal.style.width = "300px"
  animal.style.margin = "5px"
+ animal.style.borderRadius = "20px"
 
  
  
@@ -27,13 +28,33 @@ mainContainer.style.display = "flex"
 mainContainer.style.flexWrap = "wrap"
 mainContainer.style.justifyContent = "center"
 
+function addAnimation(elem){
+
+    elem.classList.add("mouseover")
+}
+
+function removeAnimation(elem){
+
+    elem.classList.remove("mouseover")
+}
  let allAnimals = document.querySelectorAll(".animal")
 
  for(let i = 0; i < allAnimals.length; i++){
+
+    allAnimals[i].addEventListener("mouseenter",  function(){
+        addAnimation(this)
+    })
+
+    allAnimals[i].addEventListener("mouseleave",  function(){
+        removeAnimation(this)
+    })
+
+
      
     allAnimals[i].addEventListener("click",  function(){
         let animalName = this.getAttribute("alt")
         let sound = new Audio(`sounds/${animalName}.mp3`)
+     
         sound.play();
     })
  }
