@@ -1,6 +1,6 @@
 
 let animals = ["cat", "dog", "elephant", "horse", "lion", "monkey", "parrot", "sheep", "wolf", "pig",
-                 "dinosaur", "chicken"]
+                 "dinosaur", "chicken", "duck", "whale", "owl"]
 
 console.log(animals.length)
 
@@ -15,7 +15,7 @@ animals.forEach( elem => {
  animal.setAttribute("src", `images/${elem}.jpg`)
  animal.setAttribute("class", `animal`)
  animal.setAttribute("alt", `${elem}`)
- animal.style.width = "300px"
+ animal.style.width = "260px"
  animal.style.margin = "5px"
  animal.style.borderRadius = "20px"
 
